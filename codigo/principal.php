@@ -10,10 +10,10 @@
 <H2>olà, seja bem vindo (nome buscado pelo id)
 </H2>
 
-<a href="form_conta.php">Criar Conta</a>
+<a href="form_conta.php">Criar Conta</a> <br>
 
-
-<a href="">histórico de Transação</a>//abrir na mesma tela target="_self"
+<a href="fazer_transfe.php">Fazer Pagamento</a> <br>
+<a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"
 
 </body>
 </html>
