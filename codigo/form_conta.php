@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastrar_conta.php" method="post">
+    <form action="salvar_conta.php" method="post">
     <h2>Cadastrar Nova Conta</h2>
     
     Nome da Conta: <br>
