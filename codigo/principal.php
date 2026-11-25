@@ -13,7 +13,7 @@
 <a href="form_conta.php">Criar Conta</a> <br>
 
 <a href="fazer_transfe.php">Fazer Pagamento</a> <br>
-<a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"
+<a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função
 
 </body>
 </html>
