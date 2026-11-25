@@ -7,12 +7,13 @@
 </head>
 <body>
 
-<H2>olà, seja bem vindo (nome buscado pelo id)
-</H2>
-<h2>saldo da conta (valor atribuido ao id)</h2>
-<a href="form_conta.php">Criar Conta</a> <br>
+    <H2>olà, seja bem vindo (nome buscado pelo id)</H2> <br><br>
 
-<a href="fazer_transfe.php">Fazer Pagamento</a> <br>
+        <h3>saldo da conta (valor atribuido ao id)</h3> <br><br>
+
+<a href="form_conta.php">Criar Conta</a> <br><br>
+
+<a href="fazer_transfe.php">Fazer Pagamento</a> <br><br>
 <a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função
 
 </body>
