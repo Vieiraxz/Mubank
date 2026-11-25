@@ -9,6 +9,6 @@
      
     <a href="fazer_login.php">Fazer_login</a> <br><br>
 
-    <a href="form_conta.php">Não tenho cadastro</a>
+    <a href="form_usuario.php">Não tenho cadastro</a>
 </body>
 </html>
