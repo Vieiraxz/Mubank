@@ -30,8 +30,6 @@ CREATE TABLE IF NOT EXISTS `mubank`.`usuario` (
   PRIMARY KEY (`idusuario`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `mubank`.`conta`
 -- -----------------------------------------------------
