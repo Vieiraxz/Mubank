@@ -7,8 +7,13 @@
 </head>
 <body>
 
+<H2>olà, seja bem vindo (nome buscado pelo id)
+</H2>
 
 <a href="form_conta.php">Criar Conta</a>
+
+
+<a href="">histórico de Transação</a>//abrir na mesma tela target="_self"
 
 </body>
 </html>
