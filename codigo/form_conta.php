@@ -24,6 +24,6 @@
     <input type="submit" value="Criar Conta">
 </form>
 
-<a href="form_login.php">Voltar para o Login</a>
+<a href="fazer_login.php">Fazer o Login</a>
 </body>
 </html>
