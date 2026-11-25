@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    A
+
+
+<a href="form_conta.php">Criar Conta</a>
+
 </body>
 </html>
