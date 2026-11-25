@@ -98,3 +98,7 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+INSERT INTO `mubank`.`usuario` (`nome`, `email`, `senha_hash`, `data_criacao`, `foto`) VALUES
+('Ana Silva', 'ana.silva@email.com', 'hash_senha_123', NOW(), 'ana.jpg'),
+('Carlos Souza', 'carlos.souza@email.com', 'hash_senha_456', NOW(), 'carlos.jpg');
