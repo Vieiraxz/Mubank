@@ -9,7 +9,7 @@
 
 <H2>olà, seja bem vindo (nome buscado pelo id)
 </H2>
-
+<h2>saldo da conta (valor atribuido ao id)</h2>
 <a href="form_conta.php">Criar Conta</a> <br>
 
 <a href="fazer_transfe.php">Fazer Pagamento</a> <br>
