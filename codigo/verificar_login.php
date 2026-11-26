@@ -30,8 +30,8 @@ if ($quantidade == 1) {
 
         header("Location:fazer_login.php");
     } else {
-        header("Location: index.php?erro=login&email=$email");
+        header("Location:fazer_login.php?erro=login&email=$email");
     }
 } else {
-    header("Location: index.php?erro=login&email=$email");
+    header("Location: fezer_login.php?erro=login&email=$email");
 }
