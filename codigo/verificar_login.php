@@ -1,8 +1,8 @@
 <?php
 require_once "conexao.php";
-
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+if (isset($_POST['email'])) {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
 $sql = "select * from usuario WHERE email = ?";
 $comando = mysqli_prepare($conexao, $sql);
@@ -27,11 +27,12 @@ if ($quantidade == 1) {
         $_SESSION['email'] = $email;
         $_SESSION['nome'] = $nome;
         $_SESSION['idusuario'] = $idusuario;
-
+        $email = $_SESSION['email'];
         header("Location:principal.php");
+    
     } else {
         header("Location:fazer_login.php?erro=login&email=$email");
     }
 } else {
     header("Location: fazer_login.php?erro=login&email=$email");
-}
+}}

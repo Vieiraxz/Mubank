@@ -99,3 +99,41 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+USE `mubank`;
+
+-- -----------------------------------------------------
+-- Inserindo dados na tabela `usuario`
+-- Senhas exemplificadas com o hash do PHP (password_hash)
+-- -----------------------------------------------------
+INSERT INTO `usuario` (`nome`, `email`, `senha_hash`, `data_criacao`, `foto`) VALUES
+('Ana Clara Souza', 'ana.clara@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', NOW(), 'ana.jpg'),
+('Bruno Oliveira', 'bruno.oliveira@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', NOW(), 'bruno.jpg'),
+('Carla Mendes', 'carla.mendes@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', NOW(), 'carla.jpg');
+
+-- -----------------------------------------------------
+-- Inserindo dados na tabela `conta`
+-- -----------------------------------------------------
+INSERT INTO `conta` (`nome`, `numero_conta`, `agencia`, `saldo`, `idusuario`) VALUES
+('Conta Corrente Ana', '12345-6', '0001', 1500.50, 1),
+('Conta Poupança Ana', '12346-4', '0001', 5000.00, 1),
+('Conta Corrente Bruno', '22334-8', '0001', 320.00, 2),
+('Conta Corrente Carla', '33445-9', '0002', 2450.75, 3);
+
+-- -----------------------------------------------------
+-- Inserindo dados na tabela `transacao`
+-- -----------------------------------------------------
+INSERT INTO `transacao` (`idconta_origem`, `idconta_destino`, `tipo`, `valor`, `descricao`, `data_transacao`) VALUES
+(1, 3, 'PIX', 150.00, 'Pagamento do jantar', NOW() - INTERVAL 2 DAY),
+(4, 1, 'TED', 500.00, 'Reembolso de viagem', NOW() - INTERVAL 1 DAY),
+(2, 2, 'Depósito', 1000.00, 'Depósito em dinheiro', NOW());
+
+-- -----------------------------------------------------
+-- Inserindo dados na tabela `interesse`
+-- -----------------------------------------------------
+INSERT INTO `interesse` (`interesse`, `idconta`) VALUES
+('Investimentos', 1),
+('Criptomoedas', 1),
+('Poupança', 2),
+('Cartão de Crédito', 3),
+('Empréstimos', 4),
+('Previdência Privada', 4);
