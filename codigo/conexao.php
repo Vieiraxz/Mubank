@@ -1,4 +1,6 @@
 <?php
+require_once "verificar_login.php";
+
 $servidor = 'db';
 $usuario = 'root';
 $password = '123';

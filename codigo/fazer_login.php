@@ -1,3 +1,12 @@
+<?php
+require_once "verificar_login.php";
+
+if (isset($_GET['email'])) {
+    $email = $_GET['email'];
+} else {
+    $email = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +17,7 @@
 <body>
      <form action="verificar_login.php" method="post">
         E-mail: <br>
-    <input type="text" name="email"> <br><br>
+    <input type="text" name="email" value="<?php echo $email ?>"> <br><br>
         Senha: <br>
     <input type="text" name="senha"> <br><br>
 

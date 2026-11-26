@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once "verificar_login.php";
+
 require_once 'conexao.php';
 
 $idconta_origem = $_SESSION['idconta'];

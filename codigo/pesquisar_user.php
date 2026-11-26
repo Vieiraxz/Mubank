@@ -1,4 +1,6 @@
 <?php
+require_once "verificar_login.php";
+
 if (isset($_GET['valor'])) {
     $valor = $_GET['valor'];
 } else {

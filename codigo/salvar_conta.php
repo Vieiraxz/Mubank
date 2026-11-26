@@ -1,4 +1,6 @@
 <?php
+require_once "verificar_login.php";
+
 require_once ("conexao.php");
 
 $nome = $_POST['nome'];
