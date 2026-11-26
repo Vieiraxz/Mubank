@@ -79,6 +79,9 @@ require_once "verificar_login.php";
     <a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função <br><br>
 
     <a href="pesquisar_user.php">pesquisar_user</a>
+
+    <br>
+    <a href="limparsession.php">Limpar a sessao</a>
 </body>
 
 </html>
