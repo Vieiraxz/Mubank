@@ -1,5 +1,4 @@
 <?php
-require_once "verificar_login.php";
 
 if (isset($_GET['email'])) {
     $email = $_GET['email'];
