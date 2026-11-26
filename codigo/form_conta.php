@@ -12,6 +12,13 @@
     Nome da Conta: <br>
     <input type="text" name="nome"> <br><br>
 
+    Interesses: <br>
+    <input type="checkbox" name="interesse[]" value="corrente">Conta Corrente <br> <br>
+    <input type="checkbox" name="interesse[]" value="poupanca">Conta Poupança <br> <br>
+    <input type="checkbox" name="interesse[]" value="investimento">Conta Investimento <br> <br>
+    <input type="checkbox" name="interesse[]" value="salario">Conta Salário <br> <br>
+    <input type="checkbox" name="interesse[]" value="universitaria">Conta Universitária <br> <br>
+
     Número da Conta: <br>
     <input type="text" name="numero_conta"> <br><br>
 
