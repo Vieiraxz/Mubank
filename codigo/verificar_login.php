@@ -15,7 +15,7 @@ $quantidade = mysqli_num_rows($resultado);
 
 if ($quantidade == 1) {
     $linha = mysqli_fetch_array($resultado);
-    $senha_usuario = $linha['senha'];
+    $senha_usuario = $linha['senha_hash'];
 
     if (password_verify($senha, $senha_usuario)) {
         $nome = $linha['nome'];
@@ -28,10 +28,10 @@ if ($quantidade == 1) {
         $_SESSION['nome'] = $nome;
         $_SESSION['idusuario'] = $idusuario;
 
-        header("Location:fazer_login.php");
+        header("Location:principal.php");
     } else {
         header("Location:fazer_login.php?erro=login&email=$email");
     }
 } else {
-    header("Location: fezer_login.php?erro=login&email=$email");
+    header("Location: fazer_login.php?erro=login&email=$email");
 }
