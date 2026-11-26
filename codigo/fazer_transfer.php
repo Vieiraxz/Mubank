@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_GET['valor'])) {
     $valor = $_GET['valor'];
 } else {
@@ -12,7 +13,7 @@ if (isset($_GET['valor'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<>
+<body>
     Pesquise o usuário que deseja transferir o dinheiro, você pode pesquisar pelo nome ou pelo número da conta.
     <form action="fazer_transfer.php" method="get">
         Nome ou conta: <br>
@@ -41,15 +42,16 @@ if (isset($_GET['valor'])) {
             $conta = mysqli_stmt_get_result($comando);
 
             while ($usuario = mysqli_fetch_array($conta)) {
+                if ($usuario['idconta'] != $_SESSION['idconta']) {
     ?>
-    
+        <form action="salvar_tranfer.php" method="post">
                 <div>
                     <p>Nome: <?php echo $usuario['nome']; ?></p>
                     <p>Número da Conta: <?php echo $usuario['numero_conta']; ?></p>
-                    <input type="radio" name="conta" value="<?php echo $usuario['numero_conta']; ?>"> Selecionar
+                    <input type="radio" name="idconta" value="<?php echo $usuario['idconta']; ?>"> Selecionar
                 </div>
                 <?php
-            }
+            }}
         } else {
                 ?>
                 a
@@ -58,5 +60,18 @@ if (isset($_GET['valor'])) {
         }
     }
     ?>
+    <br>
+    Valor que deseja transferir: <br>
+        <input type="text" name="valor" value="00.00">
+        <br><br>
+    Tipo de transferência: <br>
+    <input type="text" name="tipo"> <br>
+
+    Descrição: <br>
+    <input type="text" name="descricao"> <br><br>
+
+    
+        <input type="submit" value="Transferir">
+</form>
 </body>
 </html>

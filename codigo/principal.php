@@ -34,7 +34,6 @@ require_once "verificar_login.php";
 
             while ($conta = mysqli_fetch_array($contas)) {
                 $idconta = $conta['idconta'];
-                $_SESSION['idconta'] = $idconta;
                 $nome = $conta['nome'];
                 $numero_conta = $conta['numero_conta'];
                 echo "<option value='$idconta'>$nome - $numero_conta</option>";
@@ -50,6 +49,7 @@ require_once "verificar_login.php";
 
                     if (isset($_GET['idconta'])) {
                         $idconta = $_GET['idconta'];
+                        $_SESSION['idconta'] = $idconta;
 
 
                         $sql = "SELECT saldo FROM conta WHERE idconta = ?";
@@ -74,7 +74,7 @@ require_once "verificar_login.php";
 
     <a href="form_conta.php">Criar Conta</a> <br><br>
 
-    <a href="fazer_transfe.php">Fazer Pagamento</a> <br><br>
+    <a href="fazer_transfer.php">Fazer Pagamento</a> <br><br>
 
     <a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função <br><br>
 

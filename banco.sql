@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `mubank`.`transacao` (
   `tipo` VARCHAR(50) NOT NULL,
   `valor` DECIMAL(10,2) NOT NULL DEFAULT 0.00,
   `descricao` VARCHAR(100) NOT NULL,
-  `data_transacao` DATETIME NOT NULL,
+  `data_transacao` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`idtransacao`),
   INDEX `fk_transacao_conta1_idx` (`idconta_origem` ASC) VISIBLE,
   INDEX `fk_transacao_conta2_idx` (`idconta_destino` ASC) VISIBLE,
