@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastrar_usuario.php" method="post">
+    <form action="salvar_user.php" method="post">
     <h2>Cadastro de Usuario</h2>
     
     Nome de Usuario: <br>
