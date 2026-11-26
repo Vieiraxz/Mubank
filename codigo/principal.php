@@ -14,7 +14,9 @@
 <a href="form_conta.php">Criar Conta</a> <br><br>
 
 <a href="fazer_transfe.php">Fazer Pagamento</a> <br><br>
-<a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função
+
+<a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função <br><br>
+
 <a href="pesquisar_user.php">pesquisar_user</a>
 </body>
 </html>
