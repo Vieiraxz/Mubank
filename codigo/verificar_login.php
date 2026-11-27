@@ -16,16 +16,17 @@ if ($quantidade == 1) {
     $linha = mysqli_fetch_array($resultado);
     $senha_usuario = $linha['senha_hash'];
 
+
     if (password_verify($senha, $senha_usuario)) {
-        $nome = $linha['nome'];
-        $email = $linha['email'];
+        $nomeu = $linha['nome'];
+        $emailu = $linha['email'];
         $idusuario = $linha['idusuario'];
         // $foto = $linha['foto'];
 
         session_start();
         $_SESSION['logado'] = 1;
-        $_SESSION['email'] = $email;
-        $_SESSION['nome'] = $nome;
+        $_SESSION['email'] = $emailu;
+        $_SESSION['nome'] = $nomeu;
         $_SESSION['idusuario'] = $idusuario;
         $email = $_SESSION['email'];
         header("Location:principal.php");
