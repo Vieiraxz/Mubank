@@ -23,6 +23,7 @@ if ($quantidade == 1) {
         // $foto = $linha['foto'];
 
         session_start();
+        $_SESSION['logado'] = 1;
         $_SESSION['email'] = $email;
         $_SESSION['nome'] = $nome;
         $_SESSION['idusuario'] = $idusuario;

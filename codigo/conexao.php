@@ -1,6 +1,4 @@
-
 <?php
-require_once "verifica_sessao.php";
 
 $servidor = 'db';
 $usuario = 'root';
