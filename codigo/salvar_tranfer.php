@@ -56,4 +56,3 @@ if ($saldonovo < 0) {
 
 
 
-// Lógica para realizar a transferência

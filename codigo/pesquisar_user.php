@@ -28,7 +28,7 @@ if (isset($_GET['valor'])) {
 <body>
     <h2>Pesquisa de Usuários</h2>
 
-    <form action="pesquisar_usuario.php">
+    <form action="pesquisar_user.php">
         Nome ou apelido: <br>
         <input type="text" name="valor" value="<?php echo $valor; ?>">
         <br><br>
@@ -47,7 +47,7 @@ if (isset($_GET['valor'])) {
             require_once "conexao.php";
 
             // SELECT * FROM usuario WHERE nome LIKE "%z%" OR apelido LIKE "%z%";
-            $sql = "SELECT * FROM usuario WHERE nome LIKE ? OR username LIKE ?";
+            $sql = "SELECT * FROM usuario WHERE nome LIKE ? OR email LIKE ?";
             $comando = mysqli_prepare($conexao, $sql);
 
             mysqli_stmt_bind_param($comando, "ss", $valor, $valor);
@@ -59,7 +59,7 @@ if (isset($_GET['valor'])) {
     ?>
                 <div>
                     <p>Nome: <?php echo $usuario['nome']; ?></p>
-                    <p>Usuário: <?php echo $usuario['username']; ?></p>
+                    <p>Email: <?php echo $usuario['email']; ?></p>
 
                 </div>
             <?php

@@ -26,6 +26,7 @@ if (isset($_GET['valor'])) {
     </form>
 
     <?php
+    
     if (isset($_GET['valor'])) {
         if ($_GET['valor'] != "") {
             $valor = $_GET['valor'];
