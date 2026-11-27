@@ -1,8 +1,5 @@
 <?php
 require_once "conexao.php";
-if (!isset($_POST['email'])) {
-    header("Location: fazer_login.php?erro=login");
-} else {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
@@ -37,4 +34,4 @@ if ($quantidade == 1) {
     }
 } else {
     header("Location: fazer_login.php?erro=login&email=$email");
-}}
+}
