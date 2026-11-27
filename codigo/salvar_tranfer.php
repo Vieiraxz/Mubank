@@ -1,7 +1,6 @@
 <?php
-session_start();
-
 require_once "verifica_sessao.php";
+require_once "conexao.php";
 
 $idconta_origem = $_SESSION['idconta'];
 $idconta_destino = $_POST['idconta'];

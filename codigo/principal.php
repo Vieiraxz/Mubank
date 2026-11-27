@@ -76,7 +76,7 @@ require_once "conexao.php";
 
     <a href="pesquisar_user.php">pesquisar_user</a>
     <br>
-    <a href="editardados.php">Editar seus dados</a>
+    <a href="/editardados/editardados.php">Editar seus dados</a>
     <br>
     <a href="limparsession.php">Limpar a sessao</a>
 </body>
