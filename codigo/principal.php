@@ -72,7 +72,7 @@ require_once "conexao.php";
 
     <a href="fazer_transfer.php">Fazer Pagamento</a> <br><br>
 
-    <a href="historico_transfe.php">histórico de Transação</a> <br><br>
+    <a href="historico/historico.php">histórico de Transação</a> <br><br>
 
     <a href="pesquisar_user.php">pesquisar_user</a>
     <br>
