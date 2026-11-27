@@ -1,5 +1,6 @@
+
 <?php
-require_once "verificar_login.php";
+require_once "verifica_sessao.php";
 
 $servidor = 'db';
 $usuario = 'root';

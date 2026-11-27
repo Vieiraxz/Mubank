@@ -1,7 +1,8 @@
-<?php
-require_once "verificar_login.php";
 
+<?php
+require_once "verifica_sessao.php";
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

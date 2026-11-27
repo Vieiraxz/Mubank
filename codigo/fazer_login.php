@@ -1,5 +1,7 @@
 <?php
 
+require_once "verifica_sessao.php";
+
 if (isset($_GET['email'])) {
     $email = $_GET['email'];
 } else {
