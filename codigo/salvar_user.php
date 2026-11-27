@@ -4,7 +4,7 @@ require_once "conexao.php";
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$senha = $_POST['senha'];
+$senha = $_POST['senha_hash'];
     
 $nova_senha = password_hash($senha, PASSWORD_DEFAULT);
 
