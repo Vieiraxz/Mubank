@@ -75,7 +75,8 @@ require_once "conexao.php";
     <a href="historico_transfe.php">histórico de Transação</a>//abrir na mesma tela target="_self"// talvez uma função <br><br>
 
     <a href="pesquisar_user.php">pesquisar_user</a>
-
+    <br>
+    <a href="editardados.php">Editar seus dados</a>
     <br>
     <a href="limparsession.php">Limpar a sessao</a>
 </body>
