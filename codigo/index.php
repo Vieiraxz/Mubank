@@ -16,9 +16,9 @@
             </div>
         </div>
         <div class="botoes">
-            <a href="fazer_login.php">Fazer_login</a> <br><br>
+            <a href="fazer_login.php" class="botao">Fazer_login</a> <br><br>
 
-            <a href="form_usuario.php">Não tenho cadastro</a>
+            <a href="form_usuario.php" class="botao">Não tenho cadastro</a>
         </div>
     </div>
 </body>

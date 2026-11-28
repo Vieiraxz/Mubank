@@ -2,7 +2,7 @@ body {
     background-color: #500071;
 }
 
-a {
+.botao {
     background-color: white;
     box-shadow: 0 0 5px white;
     text-decoration: none;
@@ -12,7 +12,7 @@ a {
     margin: 20px;
 }
 
-a:hover {
+.botao:hover {
     background-color: #290044;
     box-shadow: 0 0 10px #290044;
     border-color: #290044;
@@ -25,8 +25,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border-top:none;
 
-}
+}   
 
 .botoes {
     background-color: #C0C0C0;
@@ -49,5 +50,21 @@ img {
     box-shadow: 0 0 10px black;
 
 }
+.fora{
+    display:flex;
+    justify-content:center;
+    border: 3px solid blue;
+    border-bottom: none;
+    padding:20px;
+}
 
+.login {
+    height: 300px;
+    width: 300px;
+}
 
+.submit{
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
